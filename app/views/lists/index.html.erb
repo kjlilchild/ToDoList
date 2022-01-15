@@ -5,9 +5,8 @@
   <% @lists.each do |list| %>
     <%= render list %>
     <p>
-      <%= link_to "Show this task", list, class: "btn btn-primary" %>
+      <%= link_to "Show this task", list, class: "btn btn-dark" %>
     </p>
   <% end %>
 </div>
 
-<%= link_to "New list", new_list_path %>
