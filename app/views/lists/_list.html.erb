@@ -1,19 +1,25 @@
 <table class="table table-bordered border-dark">
   <thead>
-    <tr class="table-secondary">
-      <th scope="col">Task:</th>
-    </tr>
+    <% if list.completed %>
+      <tr class="table-success"> 
+        <th scope="col">Complete</th>
+      </tr>
+    <% else %>
+      <tr class="table-danger"> 
+        <th scope="col">Incomplete</th>
+      </tr>
+    <% end %>
   </thead>
   <tbody>
     <% if list.completed %>
     <tr>
-      <td class="table-success" style="text-decoration:line-through">
+      <td class="table-secondary" style="text-decoration:line-through">
         <%= list.description %>
       </td>
     </tr>
     <% else %>
     <tr>
-      <td class="table-danger">
+      <td class="table-secondary">
         <%= list.description %>      
       </td>
     </tr>
