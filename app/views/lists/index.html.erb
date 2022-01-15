@@ -1,11 +1,12 @@
 <p style="color: green"><%= notice %></p>
-
-
+</br>
+<%= render "form2", list: @list %>
+</br>
 <div id="lists">
   <% @lists.each do |list| %>
     <%= render list %>
     <p>
-      <%= link_to "Show this task", list, class: "btn btn-dark" %>
+      <%= link_to "Show this Task", list, class: "btn btn-dark" %>
     </p>
   <% end %>
 </div>
