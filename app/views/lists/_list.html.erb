@@ -1,14 +1,19 @@
-<table>
-  <div id="<%= dom_id list %>">
-    <p>
-      <strong>Description:</strong>
-      <%= list.description %>
-    </p>
-
-    <p>
-      <strong>Completed:</strong>
-      <%= list.completed %>
-    </p>
-
-  </div>
+<table class="table table-bordered">
+  <thead>
+    <tr class="table-primary">
+      <th scope="col">Task</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% if list.completed %>
+    <tr>
+      <td class="table-primary"><%= list.description %></td>
+    </tr>
+    <% else %>
+    <tr>
+      <td class="table-secondary"><%= list.description %></td>
+    </tr>
+    <% end %>
+ 
+  </tbody>
 </table>
