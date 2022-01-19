@@ -55,16 +55,16 @@ group :development, :test do
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
 end
 
-#group :development do
+group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
-  #gem "web-console"
-  #gem "sqlite3", "~> 1.4"
+  gem "web-console"
+  gem "sqlite3", "~> 1.4"
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"
 
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
-#end
+end
 
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
