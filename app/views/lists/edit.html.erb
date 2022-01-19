@@ -1,10 +1,18 @@
-<h1>Editing list</h1>
 
-<%= render "form", list: @list %>
+<br></br>
+<br> </br>
+<center>
+  <div class="card text-white bg-dark mb-3" style="width: 50rem;">
+    <div class="card-body">
+      <h2 class="card-title">Update Task</h2>
+      <%= render "form", list: @list %>
+    </div>
+  </div>
 
-<br>
+  <br>
 
-<div>
-  <%= link_to "Show this task", @list, class: "btn btn-dark" %> |
-  <%= link_to "Back to tasks", lists_path, class: "btn btn-dark" %>
-</div>
+  <div>
+    <%= link_to "Show this task", @list, class: "btn btn-dark" %> |
+    <%= link_to "Back to tasks", lists_path, class: "btn btn-dark" %>
+  </div>
+</center>
